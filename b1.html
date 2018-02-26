@@ -93,8 +93,8 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="brand">
-						<h1>BLOG</h1>
-						<h3>#work</h3>
+						<h1>Rocket.Chat</h1>
+						<h3>#week-1</h3>
 					</div>
 				</div>
 			</div>
@@ -110,26 +110,35 @@
 	    <div class="section">
 	        <div class="container tim-container">
 	            <div class="title">
-	                <h2>Posts</h2>
+	                <h2>Contributions Week-I</h2>
 	            </div>
-	            <div id="typography">
-	                <div class="row">
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Feb 26, 2018</span>
-	                        <blockquote>
-                                <a data-toggle="modal" data-target="#myModal">
-	                         <p>
-	                         Since the announcement of the list of organisations which will be taking role in GSoC'18. Rocket.Chat really had my facination and this post encovers my first week of contributions towards Rocket.Chat - Android.
-	                         </p>
-                                </a>
-                                <br>
-	                         <small>
-	                         Syam Sundar K
-	                         </small>
-	                        </blockquote>
-	                    </div>
-	                </div>
-                    </div>
+                <h4>It was 12th of Feb - 11 pm, the day which I was anticipating the most, where in the organisations which were about to take part in <b>GSoC'18</b> were announced.
+                    Out of many organisations that drew in my interests, Rocket.Chat was the most facinating of them all. It had perfect projects that can act as the base to build my skills even more stronger.<br><br>
+                 <img src="assets/img/blog-1/0.png" style="display:block; margin-left:auto; margin-right:auto; width:20%"><br>
+                    On looking into the project Ideas - I felt the right spot for me to work on, was with the project titled - <b>Android Wear App</b> for Rocket Chat.<br>
+                    Since the beginning of my Android Venture, I've always been looking forward for developing cool stuff for android wear. Fun fact, when I was on going with my <b>Nano Degree</b>, I even tried to make few apps that I built Andoid wear compactable.<br>
+                    <img src="assets/img/blog-1/0.1.png" style="display:block; margin-left:auto; margin-right:auto; width:80%"><br>
+                    On knowing the mentor to be <b>@filipe.brito</b>, I got in touch with him and thanks to him for helping me out through, helping me fixing issues and suggesting me a consistent code style.<br>
+                    I got into the channels that support the GSoCs right away, two channels that served my interests were <b>#androidnativeapp</b> and <b>#gsoc18</b> where I got to how the issues that they are conserned the most are tagged under <b>2.0.0 Milestone</b><br>
+                    The first issue that I picked was <b>#710</b><br><br>
+                    <img src="assets/img/blog-1/1.png" style="display:block; margin-left:auto; margin-right:auto; width:90%"><br>
+                    Where in the issue seems to be almost complete when I tried to claim it and hence <b>@filipe.brito</b> suggested me to go on with any of the related issue that I was trying to claim.<br><br>
+                    <img src="assets/img/blog-1/2.png" style="display:block; margin-left:auto; margin-right:auto; width:90%"><br>
+                    It seemed when I was on hit with <b>#752</b> and <b>#753</b> they were already climed and hence I went on with the issue <b>#754</b><br><br>
+                    <img src="assets/img/blog-1/3.png" style="display:block; margin-left:auto; margin-right:auto; width:90%"><br>
+                    I gave in a <b>Pull Request</b> that closes the issue <b>#754</b> after 3 days I climed the issue which was PR - <b>#783</b><br>
+                    The issue dealt with <b>Update Avatar using URL</b>.<br><br>
+                    <img src="assets/img/blog-1/4.1.png" style="display:block; margin-left:auto; margin-right:auto; width:70%"><br>
+                    Once I gave in the Pull request, my mentor <b>@filipe.brito</b> was the person who reviewed my PR.<br>
+                    Since I'll have to show the update check on the action bar if the contents in the text view changes Observables has to be used.
+                    Currently before my PR there were three Observables entries for three fields namely for the <b>Name, username and Email</b><br>
+                    It's a matter of fact that <b>Obervables.combineLatest</b> can only take in three inline parameter but I'll have to listen for changes in 4 fields, the 4th field being <b>Avatar URL</b> and hence I splitted the Obervables.combineLatest into two each listening for changes in two fields individually.<br><br>
+                    <b>@filipe.brito</b> suggested to find a better solution for this so that the code gets even more consistent and Hence he commented on making some changes in my PR.<br><br>
+                    <img src="assets/img/blog-1/4.2.png" style="display:block; margin-left:auto; margin-right:auto; width:70%"><br>
+                    As suggested by <b>@filipe.brito</b>, I made the changes to listen to changes for 4 fields at a time using <b>Observables</b> and made commits on the current PR.<br><br>
+                    <img src="assets/img/blog-1/4.3.png" style="display:block; margin-left:auto; margin-right:auto; width:70%"><br>
+                    
+                </h4>
 <!--
                 <div id="typography">
 	                <div class="row">
