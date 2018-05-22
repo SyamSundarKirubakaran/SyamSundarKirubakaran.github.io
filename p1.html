@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/android.png">
+	<link rel="icon" type="image/png" href="assets/img/android.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Syam Sundar K</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<div class="container">
+        <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+	    	<a href="https://syamsundarkirubakaran.github.io/examples/profile-page.html">
+	        	<div class="logo-container">
+<!--
+	                <div class="logo">
+	                    <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>Android Developer</b> and <b>Scripter</b>" data-placement="bottom" data-html="true">
+	                </div>
+-->
+	                <div class="brand">
+	                    Syam_Sundar Kirubakaran
+	                </div>
+
+
+				</div>
+	      	</a>
+	    </div>
+
+<!--
+	    <div class="collapse navbar-collapse" id="navigation-index">
+	    	<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">
+						<i class="material-icons">school</i>  Personal Experience
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="material-icons">android</i> Android works
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Like  on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Instagram" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</li>
+
+	    	</ul>
+	    </div>
+-->
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('assets/img/code.jpeg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="brand">
+						<h1>AR Library Weekly #1</h1>
+						<h3>The Processing Foundation</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main main-raised">
+		
+	   
+		<!-- End .section-navbars  -->
+
+	    <div class="section">
+	        <div class="container tim-container">
+	            <div class="title">
+	                <h2>Contributions Week-I</h2>
+	            </div>
+                <h4>Hello World.!<br />
+                    I'm Syam Sundar K and in this summer I'll be working on an <b>AR Library</b> for Processing-Android which is a Library that will help creating Augmented Reality applications in Processing through Android Mode.<br><br>
+                    My first commitment was to create the backbone for the library and make it easy to access from the standard processing interface through the Android-mode.
+                    First of all before diving in, I made the clear understanding of the hierarchy .i.e., <b>directory structure</b> in which the the Java classes has to be placed so that I get a seamless import into the Processing Interface. I looked into the <b>Ketai Library</b> which is the library used to acquire sensor data from the Android Device in real time which was created by my mentor <b>Jesus Duran</b>. I mapped the File structure in the <b>src</b> directory with the import statements made in the Interface. This gave me a clear idea of how the stucture has to be maintained.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_1/a1.png">
+                        <img src="assets/pro/week_1/a2.png">
+                    </p><br><br>
+                    Later, I had to get the necessary raw files i.e., <b>aar</b> and <b>jar</b> files to make the Library. In case of VR, the AAR files where present in the GVR SDK by default which can be obtained by cloning the repo and acquiring the essential files but in the case of ARCore, the release didn't have the aar file by default and hence I did a pull from the <b>Maven</b> for ARCore aar file - which by unzipping gave me the essential jar files.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_1/a8.png">
+                        <img src="assets/pro/week_1/a9.png">
+                    </p><br><br>
+                    First of all I started with keeping the AR Library as one of the <b>Contributed Libraries</b> to make sure that all the assumptions were correct and make corresponding imports of the Library through the UI.<br><br>
+                    <img src="assets/pro/week_1/a14.png" style="display:block; margin-left:auto; margin-right:auto; width:50%"><br>
+                    After making the bare bones work as expected, I started working on my own repo fo the AR Library.<br><br>
+                    <b>Github Link :</b> <a href="https://github.com/SyamSundarKirubakaran/processing-ar">https://github.com/SyamSundarKirubakaran/processing-ar</a><br>
+                    <br>
+                    Started off by creating the build files for the Library .i.e., <b>build.gradle</b> and <b>build.xml</b> files specific to the Library and creating a class to see if the jar files are created as expected. Runnning the <b>ant build</b> gave me a couple of error which was taken care of and as it reached the stable state I moved it to the in-built libraries in the Android-mode along side VR.<br><br>
+                    <img src="assets/pro/mile_stones/init_2.png" style="display:block; margin-left:auto; margin-right:auto; width:50%"><br></h4>
+                    <h2>Build on mode level:</h2>
+                    <h4>
+                        The outcome of the library depends on the way of export of the app with the library from the Mode. Hence, the later half of the week involves the creating of the <b>template</b> files for the Library:<br>
+                        <ul>
+                            <li>ARActivity.java.tmpl</li>
+                            <li>ARBuild.gradle.tmpl</li>
+                            <li>ARBuildECJ.gradle.tmpl</li>
+                            <li>ARManifest.xml.tmpl</li>
+                            <li>StylesAR.xml.tmpl</li>
+                        </ul>
+                        In addition had to modify the mode level, build.gradle and build.xml files. The exsisting Java classes that generate the required app files from the given template files where made to work with AR too. Also added AR to the Android section of the menu along side a number of pre-exsisting and diverse app types, which avail the required permissions for the Android App to run properly.<br><br>
+                        <b>Github Link : </b><a href="https://github.com/SyamSundarKirubakaran/processing-ar-utils">https://github.com/SyamSundarKirubakaran/processing-ar-utils</a><br><br>
+                        I made this to be a seperate repository because it does fall outside the scope of the AR library .i.e., on the higher level and hence these changes has to be given as the <b>PR</b> once the AR Library is made stable. Making a <b>git diff</b> and giving out a PR will be handy after the completion of the project.<br><br>
+                        <img src="assets/pro/mile_stones/init_3.png" style="display:block; margin-left:auto; margin-right:auto; width:50%"><br>
+                    </h4>
+                <h2>Summary:</h2>
+                <h4>
+                    <ul>
+                        <li>Created the bare bones of the library.</li>
+                        <li>Created templates for the app files from which the actual files are built.</li>
+                        <li>Make appropriate build files to build the sketches created using the AR Library.</li>
+                    </ul>
+                    <br>
+                    Thanks to,
+                    <ul>
+                        <li>Jesus Duran - <b>Mentor</b></li>
+                        <li>Andres Colubri</li>
+                    </ul>
+                    for guiding me through this.!
+                    <br><br>
+                    That's it for the week. <b>Report week - I check</b>.
+                </h4>
+<!--
+                <div id="typography">
+	                <div class="row">
+	                    <div class="tim-typo">
+	                        <span class="tim-note">Feb 26, 2018</span>
+	                        <blockquote>
+	                         <p>
+	                         
+	                         </p>
+	                         <small>
+	                         Syam Sundar K
+	                         </small>
+	                        </blockquote>
+	                    </div>
+	                </div>
+	            </div>
+-->
+	    </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+	    <div class="container">
+	        <div class="copyright pull-right">
+	            &copy; 2018, made with <i class="material-icons">favorite</i> by Syam Sundar K.
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+<!-- Sart Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<i class="material-icons">clear</i>
+				</button>
+				<h4 class="modal-title">Rocket.Chat week-I</h4>
+			</div>
+			<div class="modal-body">
+				<p>
+                    It was 12th of Feb - 11 pm, the day which I was anticipating the most where in the organisations which were about to take part in <b>GSoC'18</b> were announced.
+                    Out of many organisations that had demand for my android skills and drew in my interest, Rocket.Chat was the most facinating of them all.<br><br>
+                    <img src="assets/img/blog-1/0.png" style="display:block; margin-left:auto; margin-right:auto; width:50%">
+                    On looking into their project requirements.
+                    <img src="assets/img/blog-1/0.1.png" style="display:block; margin-left:auto; margin-right:auto; width:100%">
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  End Modal -->
+
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
