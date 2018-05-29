@@ -114,22 +114,22 @@
 	            </div>
                 <h4>Hello World.!<br />
                     This is my weekly report 2 on the <b>AR Library</b> for Processing-Android which is a Library that will help creating Augmented Reality applications in Processing through Android Mode.<br><br>
-                    On continuation to the first week contributions, there where a couple of bugs to be fixed in order to build the project under AR Library. Bugs such as : While switching between modes created a null pointer expception which was fixed and issues such as version code mismatch where fixed. Over all at the end of the day, the project successfully builds and runs on the Physical device while in AR mode through ADB.<br><br>
+                    On continuation to the first week contribution, there where a couple of <b>bugs</b> to be fixed in order to build the project under AR Library. Bugs : While switching between modes created a <b>null pointer expception</b> which was fixed and issues such as <b>version code</b> mismatch where fixed. Over all at the end of the day, the project <b>successfully builds</b> and runs on the Physical device while in AR mode through ADB.<br><br>
                     <p align="center">
                         <img src="assets/pro/week_2/b1.gif">
                     </p><br><br>
-                    Later, As it builds successfully an example was created (it doesn't contain any renderers yet) under AR Library and it was made sure that it is listed under the AR directory of the in-build libraries and also tested if it works as expected.<br><br>
+                    Later, As it builds successfully an <b>example</b> was created (it doesn't contain any renderers yet) under AR Library and it was made sure that it is listed under the AR directory of the in-build libraries and also tested if it works as expected.<br><br>
                     <p align="center">
                         <img src="assets/pro/week_2/b5.png">
                         <img src="assets/pro/week_2/b6.png">
                     </p><br><br>
-                    Once we had this up and running, we went on with implementing certain AR functionalities .i.e., first of all it should be made sure that if the device in which the sketch is running supports ARCore, only if the device support ARCore the Renderer must be initialised else a prompt is shown to the user saying the status as not supported<br><br>
+                    Once we had this up and running, we went on with implementing certain AR functionalities .i.e., first of all it should be made sure that if the device in which the sketch is running <b>supports ARCore</b>, only if the device supports ARCore the Renderer must be initialised else a prompt is shown to the user saying the status as device not supported.<br><br>
                     <p align="center">
                         <img src="assets/pro/week_2/b19.png" height=560 width =270 />
                         <img src="assets/pro/week_2/b20.png" height=560 width =270 />
                         <img src="assets/pro/week_2/b22.png" height=560 width =270 />
                     </p><br><br>
-                    Once as the Device is found supporting ARCore the necessary permissions (in this case the camera permission) has to be given during the first lauch of the sketch. The permission is directly granted if allow is clicked else the sketch properties is openned up to grant permission if Don't ask again option is checked.<br><br>
+                    Once as the Device is found supporting ARCore the <b>necessary permissions</b> (in this case the <b>camera</b> permission) has to be given during the first lauch of the sketch. The permission is directly granted if allow is clicked else the sketch properties is openned up to grant permission if <b>Don't ask again</b> option is checked.<br><br>
                     <p align="center">
                         <img src="assets/pro/week_2/b26.png" height=560 width =270 />
                         <img src="assets/pro/week_2/b24.png" height=560 width =270 />
@@ -137,24 +137,24 @@
                     </p><br><br>
                     <h2>Renderers:</h2>
                     <h4>
-                        Unlike the VR Library which extends from GVR Activity, the AR library use it's own GLSurfaceView which acts as the common view over which rendering is done. The VR Renderer is implemented in two ways .i.e., MONO and STEREO where as the AR consists of a Renderer that consists of a number of sub-renderers to make it work as expected, which include:<br>
+                        Unlike the VR Library which extends from GVR Activity, the AR library use it's own <b>GLSurfaceView</b> which acts as the common view over which rendering is done. The VR Renderer is implemented in two ways .i.e., MONO and STEREO where as the AR consists of a Renderer that consists of a number of sub-renderers to make it work as expected, which includes:<br>
                         <ul>
                             <li>Background Renderer</li>
                             <li>Plane Renderer</li>
                             <li>Point-cloud Renderer</li>
                             <li>Object Renderer</li>
                         </ul>
-                        The Main Renderer is named AR similar to MONO or STEREO done on VR.<br><br>
+                        The Main Renderer is <b>named AR</b> similar to MONO or STEREO done on VR.<br><br>
                         <p align="center">
                         <img src="assets/pro/week_2/b16.png">
                         </p><br><br>
-                        Before actually implementing the renderer in the library, I though of having a test app that performs the Rendering as expected on each stages. The repo will have 4 braches (currently has 2 - first two renderers implemented) that contain the corresponding 4 sub-renderers.<br><br>
+                        Before actually implementing the renderer in the library, I though of having a test app that performs the Rendering as expected on each stages. The repo - <b>Renderer Tests</b> will have 4 braches (currently has 2 - first two renderers implemented) that will contain the corresponding 4 sub-renderers.<br><br>
                         <b>Github Link : </b><a href="https://github.com/SyamSundarKirubakaran/RendererTests">https://github.com/SyamSundarKirubakaran/RendererTests</a><br><br>
-                        The background Renderer on implementation should produce the real-time camera image in Blockin mode as output. But wierd enough it produces a solid color instread of the camera image, yet it is important to note that the tint of the color is relational to the scene that the camera is pointing at .i.e., on pointing at a brown suface produces a brown tint, and on placing it on the table produces a black tint. This has to be fixed to obtain the real-time camera image once this is made to work as expected, the Library shall have the desired and functional background Renderer.<br><br>
+                        The <b>background Renderer</b> on implementation should produce the <b>real-time camera image</b> in <b>Blocking mode</b> as output. But weird enough, it produces a solid color instread of the camera image, yet it is important to note that the tint of the color is <b>relational</b> to the scene that the camera is pointing at .i.e., on pointing at a brown suface produces a brown tint, and on placing it on the table produces a black tint. I will work on fixing this to obtain the real-time camera image once this is made to work as expected, the Library shall have the desired and functional background Renderer.<br><br>
                         <p align="center">
                         <video src="assets/pro/week_2/b29.mp4" width="270" height="560" controls>
                             </video></p><br><br>
-                        The Object Renderer which is the last part of implemetation makes similarities with P3D which is used to renderer 3D objects, this could be taken advantage during the implementation of object renderer - but I'm not sure if P3D can be nested inside AR Library(just a raw thought).<br><br>
+                        The <b>Object Renderer</b> which is the last part of implemetation makes similarities with <b>P3D</b> which is used to renderer 3D objects, this could be taken advantage during the implementation of object renderer - but I'm not sure if P3D can be <b>nested inside</b> AR Renderer(just a raw thought) because P3D is itself a stand-alone Renderer. Testing P3D Renderer under AR Library (without using AR Renderer):<br><br>
                         <p align="center">
                         <img src="assets/pro/week_2/b28.png" height=560 width =270 />
                     </p><br><br>
