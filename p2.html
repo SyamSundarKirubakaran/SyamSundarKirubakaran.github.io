@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/android.png">
+	<link rel="icon" type="image/png" href="assets/img/android.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Syam Sundar K</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<div class="container">
+        <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+	    	<a href="https://syamsundarkirubakaran.github.io/examples/profile-page.html">
+	        	<div class="logo-container">
+<!--
+	                <div class="logo">
+	                    <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>Android Developer</b> and <b>Scripter</b>" data-placement="bottom" data-html="true">
+	                </div>
+-->
+	                <div class="brand">
+	                    Syam_Sundar Kirubakaran
+	                </div>
+
+
+				</div>
+	      	</a>
+	    </div>
+
+<!--
+	    <div class="collapse navbar-collapse" id="navigation-index">
+	    	<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">
+						<i class="material-icons">school</i>  Personal Experience
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="material-icons">android</i> Android works
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Like  on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Instagram" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</li>
+
+	    	</ul>
+	    </div>
+-->
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('assets/img/code.jpeg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="brand">
+						<h1>AR Library Weekly #2</h1>
+						<h3>The Processing Foundation</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main main-raised">
+		
+	   
+		<!-- End .section-navbars  -->
+
+	    <div class="section">
+	        <div class="container tim-container">
+	            <div class="title">
+	                <h2>Contributions Week-II</h2>
+	            </div>
+                <h4>Hello World.!<br />
+                    This is my weekly report 2 on the <b>AR Library</b> for Processing-Android which is a Library that will help creating Augmented Reality applications in Processing through Android Mode.<br><br>
+                    On continuation to the first week contributions, there where a couple of bugs to be fixed in order to build the project under AR Library. Bugs such as : While switching between modes created a null pointer expception which was fixed and issues such as version code mismatch where fixed. Over all at the end of the day, the project successfully builds and runs on the Physical device while in AR mode through ADB.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_2/b1.gif">
+                    </p><br><br>
+                    Later, As it builds successfully an example was created (it doesn't contain any renderers yet) under AR Library and it was made sure that it is listed under the AR directory of the in-build libraries and also tested if it works as expected.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_2/b5.png">
+                        <img src="assets/pro/week_2/b6.png">
+                    </p><br><br>
+                    Once we had this up and running, we went on with implementing certain AR functionalities .i.e., first of all it should be made sure that if the device in which the sketch is running supports ARCore, only if the device support ARCore the Renderer must be initialised else a prompt is shown to the user saying the status as not supported<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_2/b19.png" height=560 width =270 />
+                        <img src="assets/pro/week_2/b20.png" height=560 width =270 />
+                        <img src="assets/pro/week_2/b22.png" height=560 width =270 />
+                    </p><br><br>
+                    Once as the Device is found supporting ARCore the necessary permissions (in this case the camera permission) has to be given during the first lauch of the sketch. The permission is directly granted if allow is clicked else the sketch properties is openned up to grant permission if Don't ask again option is checked.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_2/b26.png" height=560 width =270 />
+                        <img src="assets/pro/week_2/b24.png" height=560 width =270 />
+                        <img src="assets/pro/week_2/b25.png" height=560 width =270 />
+                    </p><br><br>
+                    <h2>Renderers:</h2>
+                    <h4>
+                        Unlike the VR Library which extends from GVR Activity, the AR library use it's own GLSurfaceView which acts as the common view over which rendering is done. The VR Renderer is implemented in two ways .i.e., MONO and STEREO where as the AR consists of a Renderer that consists of a number of sub-renderers to make it work as expected, which include:<br>
+                        <ul>
+                            <li>Background Renderer</li>
+                            <li>Plane Renderer</li>
+                            <li>Point-cloud Renderer</li>
+                            <li>Object Renderer</li>
+                        </ul>
+                        The Main Renderer is named AR similar to MONO or STEREO done on VR.<br><br>
+                        <p align="center">
+                        <img src="assets/pro/week_2/b16.png">
+                        </p><br><br>
+                        Before actually implementing the renderer in the library, I though of having a test app that performs the Rendering as expected on each stages. The repo will have 4 braches (currently has 2 - first two renderers implemented) that contain the corresponding 4 sub-renderers.<br><br>
+                        <b>Github Link : </b><a href="https://github.com/SyamSundarKirubakaran/RendererTests">https://github.com/SyamSundarKirubakaran/RendererTests</a><br><br>
+                        The background Renderer on implementation should produce the real-time camera image in Blockin mode as output. But wierd enough it produces a solid color instread of the camera image, yet it is important to note that the tint of the color is relational to the scene that the camera is pointing at .i.e., on pointing at a brown suface produces a brown tint, and on placing it on the table produces a black tint. This has to be fixed to obtain the real-time camera image once this is made to work as expected, the Library shall have the desired and functional background Renderer.<br><br>
+                        <p align="center">
+                        <video src="assets/pro/week_2/b29.mp4" width="270" height="560" controls>
+                            </video></p><br><br>
+                        The Object Renderer which is the last part of implemetation makes similarities with P3D which is used to renderer 3D objects, this could be taken advantage during the implementation of object renderer - but I'm not sure if P3D can be nested inside AR Library(just a raw thought).<br><br>
+                        <p align="center">
+                        <img src="assets/pro/week_2/b28.png" height=560 width =270 />
+                    </p><br><br>
+                    </h4>
+                <h2>Summary:</h2>
+                <h4>
+                    <ul>
+                        <li>Successful building of the project that uses the Library.</li>
+                        <li>Check if the Device supports ARCore to run the sketch.</li>
+                        <li>Obtaining permissions to run the sketch.</li>
+                        <li>Initial stage of Background Renderer.</li>
+                    </ul>
+                    <br>
+                    Thanks to,
+                    <ul>
+                        <li>Jesus Duran - <b>Mentor</b></li>
+                        <li>Andres Colubri</li>
+                    </ul>
+                    for guiding me through this.!
+                    <br><br>
+                    That's it for the week. <b>Report week - II check</b>.
+                </h4>
+<!--
+                <div id="typography">
+	                <div class="row">
+	                    <div class="tim-typo">
+	                        <span class="tim-note">Feb 26, 2018</span>
+	                        <blockquote>
+	                         <p>
+	                         
+	                         </p>
+	                         <small>
+	                         Syam Sundar K
+	                         </small>
+	                        </blockquote>
+	                    </div>
+	                </div>
+	            </div>
+-->
+	    </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+	    <div class="container">
+	        <div class="copyright pull-right">
+	            &copy; 2018, made with <i class="material-icons">favorite</i> by Syam Sundar K.
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+<!-- Sart Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<i class="material-icons">clear</i>
+				</button>
+				<h4 class="modal-title">Rocket.Chat week-I</h4>
+			</div>
+			<div class="modal-body">
+				<p>
+                    It was 12th of Feb - 11 pm, the day which I was anticipating the most where in the organisations which were about to take part in <b>GSoC'18</b> were announced.
+                    Out of many organisations that had demand for my android skills and drew in my interest, Rocket.Chat was the most facinating of them all.<br><br>
+                    <img src="assets/img/blog-1/0.png" style="display:block; margin-left:auto; margin-right:auto; width:50%">
+                    On looking into their project requirements.
+                    <img src="assets/img/blog-1/0.1.png" style="display:block; margin-left:auto; margin-right:auto; width:100%">
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  End Modal -->
+
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
