@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/android.png">
+	<link rel="icon" type="image/png" href="assets/img/android.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Syam Sundar K</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<div class="container">
+        <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+	    	<a href="https://syamsundarkirubakaran.github.io/examples/profile-page.html">
+	        	<div class="logo-container">
+<!--
+	                <div class="logo">
+	                    <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>Android Developer</b> and <b>Scripter</b>" data-placement="bottom" data-html="true">
+	                </div>
+-->
+	                <div class="brand">
+	                    Syam_Sundar Kirubakaran
+	                </div>
+
+
+				</div>
+	      	</a>
+	    </div>
+
+<!--
+	    <div class="collapse navbar-collapse" id="navigation-index">
+	    	<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">
+						<i class="material-icons">school</i>  Personal Experience
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="material-icons">android</i> Android works
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Like  on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Instagram" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</li>
+
+	    	</ul>
+	    </div>
+-->
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('assets/img/code.jpeg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="brand">
+						<h1>AR Library Weekly #3</h1>
+						<h3>The Processing Foundation</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main main-raised">
+		
+	   
+		<!-- End .section-navbars  -->
+
+	    <div class="section">
+	        <div class="container tim-container">
+	            <div class="title">
+	                <h2>Contributions Week-III</h2>
+	            </div>
+                <h4>Hello World.!<br />
+                    This is my weekly report 3 on the <b>AR Library</b> for Processing-Android which is a Library that will help creating Augmented Reality applications in Processing through Android Mode.<br><br>
+                    Implementation of the AR renderer that relays on the <b>background sub-renderer</b> to perform the background rendering and to obtain the <b>real-time camera image</b> in blocking mode was done. Now the <b>example</b> includes a simple sketch that initializes the AR renderer and running it gives the actual camera image in real-time over which the virtual objects will be renderer.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_3/c17.png">
+                        <img src="assets/pro/week_3/c14.png">
+                    </p><br><br>
+                    There were a number of challenges that I faced during the implementation of this renderer, infact - I ran into about <b>a dozen bugs</b> out of which few were new to me most of them while working with <b>openGLES</b> part and as it's java I encountered <b>null object reference</b> quite often on the <b>surfaceViews.</b> Some were fixed quite easily and some needed skills to fix - however, at the end of the day all the bugs and run-time exceptions were removed and the renderer was made consistent. To make sure that the control flow was as expected I used a <b>log statement</b> that reads "Reach - number" to <b>ensure proper call-backs</b> are call at right time sinces there call-backs are the onces that maintain the performance if not killed it shall lead to poor utilization of resources.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_3/c16.png">
+                        <img src="assets/pro/week_3/c10.png">
+                    </p><br><br>
+                    The following images shows the implementations in the chronological order:<br><br>
+                    <ul>
+                        <li>Accessing the <b>AR Renderer.</b> </li>
+                        <li>Accessing the initilaised <b>Surface View.</b> </li>
+                        <li>Accessing the Renderer with <b>SurfaceView.Renderer.</b></li>
+                    </ul><br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_3/c18.png" height=560 width =270 />
+                        <img src="assets/pro/week_3/c19.png" height=560 width =270 />
+                        <img src="assets/pro/week_3/c20.png" height=560 width =270 />
+                    </p><br><br>
+                    <b>(a)</b> The Camera image obtained by <b>continuous mode</b> will be more precise in tracking of virtual objects over the real-world but at the cost of speed and performance. Initially, I tried to implement the renderer by making it work under the continuous rendering mode but as expected we ran <b>out of stacks.</b><br><b>(b)</b> The <b>shaders</b> are needed to implement the renderers which was placed within the src dorectory and obtained using <b>IO methods</b> using Relative URLs from PWD.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_3/c9.png">
+                        <img src="assets/pro/week_3/c12.png">
+                    </p><br><br>
+                    <h2>Working:</h2>
+                    <h4>
+                        
+                        <b>Youtube Link : </b><a href="https://www.youtube.com/watch?v=vbjOnEHlrfE">https://www.youtube.com/watch?v=vbjOnEHlrfE</a><br>(Sorry for the quality, kindly keep the resolution atleast at 480p)<br><br>
+                        The AR Renderer now successfully gets the real-time camera image over which the Renderering of virtual objects can be done. For now the activity shows a <b>Progress Dialogue</b> which says "Searching for Surfaces" this Dialogue will be <b>dismissed by the Plane renderer</b> after it has be implemented, whose function is to detect planes in the obtained image.<br><br>
+                        <p align="center">
+                        <img src="assets/pro/week_3/c24.png" height=560 width =270 />
+                        <img src="assets/pro/week_3/c23.png" height=560 width =270 />
+                        <img src="assets/pro/week_3/c21.png" height=560 width =270 />
+                        </p><br><br>
+                        <b>Github Link : </b><a href="https://github.com/SyamSundarKirubakaran/processing-ar">https://github.com/SyamSundarKirubakaran/processing-ar</a><br><br>
+                    </h4>
+                <h2>Summary:</h2>
+                <h4>
+                    <ul>
+                        <li>Successful implementation of <b>Background Renderer.</b></li>
+                        <li>Obtaining real-time <b>camera image.</b></li>
+                        <li><b>Bug fixes.</b></li>
+                        <li>AR Renderer now makes use of <b>PBackground.</b></li>
+                        <li>Testing of Renderer. <b>Device used : Pixel 2 XL</b></li>
+                    </ul>
+                    <br>
+                    Thanks to,
+                    <ul>
+                        <li>Jesus Duran - <b>Mentor</b></li>
+                        <li>Andres Colubri</li>
+                    </ul>
+                    for guiding me through this.!
+                    <br><br>
+                    That's it for the week. <b>Report week - III check</b>.
+                </h4>
+<!--
+                <div id="typography">
+	                <div class="row">
+	                    <div class="tim-typo">
+	                        <span class="tim-note">Feb 26, 2018</span>
+	                        <blockquote>
+	                         <p>
+	                         
+	                         </p>
+	                         <small>
+	                         Syam Sundar K
+	                         </small>
+	                        </blockquote>
+	                    </div>
+	                </div>
+	            </div>
+-->
+	    </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+	    <div class="container">
+	        <div class="copyright pull-right">
+	            &copy; 2018, made with <i class="material-icons">favorite</i> by Syam Sundar K.
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
