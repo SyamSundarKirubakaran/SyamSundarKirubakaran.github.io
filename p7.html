@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/android.png">
+	<link rel="icon" type="image/png" href="assets/img/android.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Syam Sundar K</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<div class="container">
+        <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+	    	<a href="https://syamsundarkirubakaran.github.io/examples/profile-page.html">
+	        	<div class="logo-container">
+<!--
+	                <div class="logo">
+	                    <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>Android Developer</b> and <b>Scripter</b>" data-placement="bottom" data-html="true">
+	                </div>
+-->
+	                <div class="brand">
+	                    Syam_Sundar Kirubakaran
+	                </div>
+
+
+				</div>
+	      	</a>
+	    </div>
+
+<!--
+	    <div class="collapse navbar-collapse" id="navigation-index">
+	    	<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">
+						<i class="material-icons">school</i>  Personal Experience
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="material-icons">android</i> Android works
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Like  on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Instagram" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</li>
+
+	    	</ul>
+	    </div>
+-->
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('assets/img/code.jpeg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="brand">
+						<h1>AR Library Weekly #7 & #8</h1>
+						<h3>The Processing Foundation</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main main-raised">
+		
+	   
+		<!-- End .section-navbars  -->
+
+	    <div class="section">
+	        <div class="container tim-container">
+	            <div class="title">
+	                <h2>Contributions Week-VII & VIII</h2>
+	            </div>
+                <h4>Hello World.!<br />
+                    This is my weekly report <b>7 and 8</b> on the <b>AR Library</b> for Processing-Android which is a Library that will help creating Augmented Reality applications using Processing through Android Mode.<br><br>
+                    On continuation to the previous week which dealt with the <b>fixing the background </b> of the AR scene and also the <b>consistency of the object</b> in the scene. This week began by implementing the <b>plane renderer and the point cloud renderer integration</b> with the Processing core. To be short there were a <b>lot of bugs</b> that I came accross while this implementation since working with the core was new to me and with the help of my mentors I was able to fix most of it and Overall the renderer was made consistent with the basic AR sub-renderer requirements. Later I began with the <b>Object renderer</b> part. Ideally, there are two cases to deal with : <b>the processing native shapes PShapes and the raw object file that are fetched from the data directory.</b><br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_7/g4.png"/>
+                        </p><br><br>
+                    Initailly, I ran into some error due to <b>checks that ARCore performed</b> in the activiy call backs such a onPause() and onResume() in most of the cases it was fine, but during the <b>initial run</b> (first run) of the app when the <b>permission dialogue</b> is open this exception was caused and then the source was figured out. Later, to start with the object renderer I thought of working with the <b>importing object from the .obj file</b> and placing them in the scene since I'm familiar with working with those kinda files and later with the PShapes.<br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_7/g1.png">
+                    </p><br><br>
+                    To begin with the object files import, I imported a few obj model from <b>poly.google.com</b> which are under common creator's license. First the object has the fetched from the <b>data folder</b> so that it can be placed inside the AR scene where I encountered a number of exceptions in <b>reading the file</b> which was later cleared out. <br><br>
+                    <p align="center">
+                        <img src="assets/pro/week_7/g2.png">
+                        <img src="assets/pro/week_7/g6.png">
+                    </p><br><br>
+                    <h2>Concept:</h2>
+                    <h4>
+                        To give you a rough idea of what should be done is : consider the shader (<b>colovert.glsl</b> in Processing core) it looks like this<br><br>
+                        <p align="center">
+                        <img src="assets/pro/week_7/g35.png"/>
+                    </p><br><br>
+                        Where the <b>transformMatrix</b> is generated when the statements such as <b>translate(mouseX,mouseY)</b> is given (just for an example) and it is multiplied with the position to give the <b>gl_Position</b> which is assigned to the object, where as in AR instread of transformMatrix has to be <b>replaced with u_ModelViewProjection</b> which is <b>calculated in real-time by the renderers</b> that is created. On multiplying it with the position <b>gives the gl_Position</b> and voila that’s it. It should do it.! There are of course a number of <b>complications involved</b> since it involves OpenGL but to give an abstract view this is what should be done.<br><br>
+                        <p align="center">
+                        <img src="assets/pro/week_7/g23.png">
+                    </p><br><br>
+                    <h2>Working with object files and PShapes:</h2>
+                    <h4>
+                        When I started working with PShapes initially on perform the transformation led to a number of <b>wierd transformations</b> of the object in the real world scene some of them are given as follows <br><br>
+                        <ul>
+                            <li><b>Image (1)</b> - Only the wireframe of the object moves and not the actual object.</li> 
+                            <li><b>Image (2)</b> - The wireframe of the object moves prior to the object motion.</li>
+                            <li><b>Image (3)</b> - Causing runtime exceptions due to GL errors.</li>
+                        </ul><br>
+                        <p align="center">
+                        <img src="assets/pro/week_7/g28.png" height=560 width =270 />
+                        <img src="assets/pro/week_7/g26.png" height=560 width =270 />
+                            <img src="assets/pro/week_7/g29.png" height=560 width =270 />
+                        </p><br><br>
+                        Initally we also did not have the <b>vector3</b> that holds the translation & rotation <b>returning zero</b> after the integration was done. Later this was fixed by correcting the place where <b>Pose</b> was obtained from which all these vectors were obtained then they had the expected behaviour.<br><br>
+                        <p align="center">
+                        <img src="assets/pro/week_7/g25.png"/>
+                            <img src="assets/pro/week_7/g15.png"/>
+                        </p><br><br>
+                        After fixing it and having the shader multiply the MVP matrix with a_Position gave the <b>perfect gl_Position</b> where the imported object was placed in the AR scene and remained in the same position till the session is over which is the <b>expected behaviour in AR</b>.
+                        <br><br>
+                        <b>Youtube Link : </b><a href="https://youtu.be/sfpSNW_ElD4"> https://youtu.be/sfpSNW_ElD4</a><br><br>
+                        <p align="center">
+                        <img src="assets/pro/week_7/g31.png" height=560 width =270 />
+                            <img src="assets/pro/week_7/g30.png" height=560 width =270 />
+                        <img src="assets/pro/week_7/g33.png" height=560 width =270 />
+                        </p><br><br>
+                        <h2>AR Library specific callbacks:</h2><h4>
+                        <ul>
+                            <li><b>PPlane.setPlaneColor(color_val : int);</b> - Set the color of the detected plane in the form of 0x00BCD4FF(example)</li> 
+                            <li><b>PPlane.setPlaneTexture(Texture_name : String);</b> - Set the texture of the detected plane (either png or jpeg).</li>
+                            <li><b>PObject_instance.load(file_name : String , Texture_name : String);</b> - to load the objects and make it ready to place it in the AR scene.</li>
+                            <li><b>PObject_instance.place();</b> - To place the object in the AR scene (prefereably to place this inside event handles like mousePressed).</li><br>
+                            Also all the <b>native Processing commands</b> can be used in addition to all the above and this is just v1.0-beta of the AR library, a number of call backs can be added in the future <b>to make it's functioning more simplified.</b>
+                        </ul>
+                        </h4>
+                        </h4>
+                <h2>Summary:</h2>
+                <h4>
+                    <ul>
+                        <li><b>Beta stage</b> of the AR Library</li>
+                        <li>Bug fixing.</li>
+                        <li>Integration with <b>Processing Core</b>.</li>
+                        <li>Testing with <b>sample Sketches.</b></li>
+                        <li>Object renderer.</li> 
+                    </ul>
+                    <br>
+                    Thanks to,
+                    <ul>
+                        <li>Jesus Duran - <b>Mentor</b></li>
+                        <li>Andres Colubri</li>
+                    </ul>
+                    for guiding me through this.!
+                    <br><br>
+                    That's it for the week. <b>Report week - VII & VIII check</b>.
+                </h4>
+<!--
+                <div id="typography">
+	                <div class="row">
+	                    <div class="tim-typo">
+	                        <span class="tim-note">Feb 26, 2018</span>
+	                        <blockquote>
+	                         <p>
+	                         
+	                         </p>
+	                         <small>
+	                         Syam Sundar K
+	                         </small>
+	                        </blockquote>
+	                    </div>
+	                </div>
+	            </div>
+-->
+	    </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+	    <div class="container">
+	        <div class="copyright pull-right">
+	            &copy; 2018, made with <i class="material-icons">favorite</i> by Syam Sundar K.
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
