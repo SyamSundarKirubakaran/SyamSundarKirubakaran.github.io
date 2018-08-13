@@ -115,7 +115,7 @@
 	            </div>
                 <h4>Student : <b>Syam Sundar K</b><br>
                     Project : <b>ARCore Renderer for Processing Android</b><br><br>
-                    This blog summarizes all the experiments that I've done for the implementation of the renderer, the design decisions that I've taken, the conflicts that I ran into, places where I sought help from my mentors, how I fixed some of the hard to fix bugs, how I summeried outcome of each week through my weekly blogs, visual outcome of the project, how I scheduled my work for 3 months, the current stage of the AR Library and the things that I've learn through GSoC'18 and from the Processing Foundation.
+                    This blog summarizes all the experiments that I've done for the implementation of the renderer, the design decisions that I've taken, the conflicts that I ran into, places where I sought help from my mentors, how I fixed some of the hard to fix bugs, how I summarized outcome of each week through my weekly blogs, visual outcome of the project, how I scheduled my work for 3 months, the current stage of the AR Library and the things that I've learn through GSoC'18 and from the Processing Foundation.
                     <br><br>
 
                     First of all, My sincere thanks to <b>Jesus Duran and Andres Colubri</b>, for their excellent mentorship. They immediately responded, and assisted me whenever I needed help. I’m grateful to the Processing team, community members and my fellow GSoC colleagues for their help.<br><br>
@@ -152,11 +152,11 @@ Also mentors have given suggestions on making further progress after each blog.<
 Initially while talking off with the library was comfortable for me since I had enough time during the community Bonding period. And I was able to successfully build and deploy the AR Library with a week and half or so where we used ant build system. <br><br>
 Implementation of background , plane and point clouds went smooth and also methods were created for texturing and coloring planes thorugh the processing sketch which functions by relaying on the AR Library itself.<br><br>
 Then we began with the integration phase where we had to include sketch.handleDraw() which in turn calls the draw() in the sketch. Only when this is done the shapes and 3D entities drawn through the sketch such as box() and sphere() appears on the AR scene, but the already implemented renderers .i.e., plane, point cloud and background is unaware of this Integration there were a number of conflicts that were encountered: <br><br>
-<b>1.</b> Initially the background renderer remained void or was showing tint propositional to the scene that the camera was pointing at.<br>
-<b>2.</b> The background renderer was made to freeze by the integration initially. The initial frame when the initialization is done is maintained throughout the activity lifecycle and the frame didn't update with the frame of the current camera image.<br>
+<b>1.</b> Initially the background renderer remained void or was showing tint Proportional to the scene that the camera was pointing at.<br>
+<b>2.</b> The background renderer was frozen by the integration initially. The initial frame when the initialization is done is maintained throughout the activity lifecycle and the frame didn't update with the frame of the current camera image.<br>
 <b>3.</b> The object remained un-aligned with the virtual equivalents initially.<br>
 <b>4.</b> On placing primitive shapes in the scene and on translation, only the wireframe moved and not the entire object.<br>
-<b>5.</b> The achoring of the object with the plane was no so consistent.<br>
+<b>5.</b> The anchoring of the object with the plane was no so consistent.<br>
 <b>6.</b> The Matrix math which involves the modification of the MVP matrix to handle transformations were hard to figure out.<br><br>
 
                     <h2>Visual outcomes:</h2><h4>
