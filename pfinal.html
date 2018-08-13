@@ -154,7 +154,7 @@ Implementation of background , plane and point clouds went smooth and also metho
 Then we began with the integration phase where we had to include sketch.handleDraw() which in turn calls the draw() in the sketch. Only when this is done the shapes and 3D entities drawn through the sketch such as box() and sphere() appears on the AR scene, but the already implemented renderers .i.e., plane, point cloud and background is unaware of this Integration there were a number of conflicts that were encountered: <br><br>
 <b>1.</b> Initially the background renderer remained void or was showing tint Proportional to the scene that the camera was pointing at.<br>
 <b>2.</b> The background renderer was frozen by the integration initially. The initial frame when the initialization is done is maintained throughout the activity lifecycle and the frame didn't update with the frame of the current camera image.<br>
-<b>3.</b> The object remained un-aligned with the virtual equivalents initially.<br>
+<b>3.</b> The object remained un-aligned with the virtual equivalents (world co-ordinates) initially.<br>
 <b>4.</b> On placing primitive shapes in the scene and on translation, only the wireframe moved and not the entire object.<br>
 <b>5.</b> The anchoring of the object with the plane was no so consistent.<br>
 <b>6.</b> The Matrix math which involves the modification of the MVP matrix to handle transformations were hard to figure out.<br><br>
