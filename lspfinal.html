@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/android.png">
+	<link rel="icon" type="image/png" href="assets/img/android.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Syam Sundar K</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<div class="container">
+        <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+	    	<a href="https://syamsundarkirubakaran.github.io/examples/profile-page.html">
+	        	<div class="logo-container">
+<!--
+	                <div class="logo">
+	                    <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>Android Developer</b> and <b>Scripter</b>" data-placement="bottom" data-html="true">
+	                </div>
+-->
+	                <div class="brand">
+	                    Syam_Sundar Kirubakaran
+	                </div>
+
+
+				</div>
+	      	</a>
+	    </div>
+
+<!--
+	    <div class="collapse navbar-collapse" id="navigation-index">
+	    	<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">
+						<i class="material-icons">school</i>  Personal Experience
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="material-icons">android</i> Android works
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Like  on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" title="Follow me on Instagram" data-placement="bottom" href="#" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</li>
+
+	    	</ul>
+	    </div>
+-->
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('assets/img/code.jpeg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="brand">
+						<h1>Processing Language Server</h1>
+                        <h3>Google summer of code 2019 -  Final Report</h3>
+                        <h3>The Processing Foundation</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main main-raised">
+		
+	   
+		<!-- End .section-navbars  -->
+
+	    <div class="section">
+	        <div class="container tim-container">
+	            <div class="title">
+	                <h2>Final Summary:</h2>
+	            </div>
+                <h4>Student : <b>Syam Sundar K</b><br>
+                    Project : <b>ARCore Renderer for Processing Android</b><br><br>
+                    This blog summarizes all the experiments that I've done for the implementation of the renderer, the design decisions that I've taken, the conflicts that I ran into, places where I sought help from my mentors, how I fixed some of the hard to fix bugs, how I summarized outcome of each week through my weekly blogs, visual outcome of the project, how I scheduled my work for 3 months, the current stage of the AR Library and the things that I've learn through GSoC'18 and from the Processing Foundation.
+                    <br><br>
+
+                    First of all, My sincere thanks to <b>Jesus Duran and Andres Colubri</b>, for their excellent mentorship. They immediately responded, and assisted me whenever I needed help. I’m grateful to the Processing team, community members and my fellow GSoC colleagues for their help.<br><br>
+                    My experience with Processing Foundation was one of the best development period I've had so far - all the community members were very friendly and encouraging. The discussion forums are more engaging. Mentors were very kind and I got in touch with them quite often. I also had a number of new friends from the community who are fellow GSoC participants for Processing Foundation.
+                    <br><br>
+
+I started my venture with processing by fixing small issues in the Processing Android code base then I became familiar with the code base in a shot spell and I wanted to contribute more and I found that ARCore Renderer for Android was one of the prioritised requirement of the repo through GSoC and since I had experience with AR I was able to crack it though the selection process.
+                    <br>
+
+                    <h2>Community Bonding:</h2><h4> 
+Community Bonding was quite helpful because there is when I got much more understanding of the code base and also started interacting with my mentor more comfortably. My mentors provided top knotch support by pretty much clearing all the clarifications that I had. With the help of mentor and by little bit of research I was able to successfully set up the development environment where I'll have to implement the AR Library. <br><br>
+We would interact through Gitter and initial Andres gave me a clear idea by pointing out how the VR library was implement and it gave me a clear idea of how to build the library from the ground up.<br>
+
+                    <h2>Design decisions:</h2><h4>
+Initally, I explored a number of native libraries like VR and a number of contributed libraries like Ketai (which is a library from my mentor Jesus) where I found the project structure and how the entities and classes should fall in the AR Library.<br><br>
+As I was a bit new to developing libraries, I started keeping the AR Library under contributed libraries and later once it's made a bit consistent I moved it as one of the inbuilt libraries in Processing Android that comes along with the Android mode. <br><br>
+I made a clear cut explanation in my #2 blog on how the main AR Renderer will be broken down into a number of sub-renderers which on tying up together gives the expected AR functionality.
+Following that, we had a couple of evaluations where my mentor gave my a lot suggestions on how to carry on with furture implemention and also asked me to rise issues and create milestones and so on so that others as well could keep track my progress. <br><br>
+Later, decisions such as what methods that the library exposes were made also the examples that was created for the library explains the exposed calls though comments.<br>
+
+                    <h2>Blogs:</h2><h4>
+I was regular in giving updates to my mentor in the progress on my project through weekly blogs and visual outcomes through YouTube videos:<br><br>
+
+                    <b>Blog #1:</b> <a href="https://syamsundarkirubakaran.github.io/p1.html" target="_blank">https://syamsundarkirubakaran.github.io/p1.html</a><br>
+                    <b>Blog #2:</b> <a href="https://syamsundarkirubakaran.github.io/p2.html" target="_blank">https://syamsundarkirubakaran.github.io/p2.html</a><br>
+<b>Blog #3:</b> <a href="https://syamsundarkirubakaran.github.io/p3.html" target="_blank">https://syamsundarkirubakaran.github.io/p3.html</a><br>
+<b>Blog #4:</b> <a href="https://syamsundarkirubakaran.github.io/p4.html" target="_blank">https://syamsundarkirubakaran.github.io/p4.html</a><br>
+<b>Blog #5:</b> <a href="https://syamsundarkirubakaran.github.io/p5.html" target="_blank">https://syamsundarkirubakaran.github.io/p5.html</a><br>
+<b>Blog #6:</b> <a href="https://syamsundarkirubakaran.github.io/p6.html" target="_blank">https://syamsundarkirubakaran.github.io/p6.html</a><br>
+                    <b>Blog #7 & #8:</b> <a href="https://syamsundarkirubakaran.github.io/p7.html" target="_blank">https://syamsundarkirubakaran.github.io/p7.html</a><br><br>
+Also mentors have given suggestions on making further progress after each blog.<br>
+
+                    <h2>Conflicts:</h2><h4>
+Initially while talking off with the library was comfortable for me since I had enough time during the community Bonding period. And I was able to successfully build and deploy the AR Library with a week and half or so where we used ant build system. <br><br>
+Implementation of background , plane and point clouds went smooth and also methods were created for texturing and coloring planes thorugh the processing sketch which functions by relaying on the AR Library itself.<br><br>
+Then we began with the integration phase where we had to include sketch.handleDraw() which in turn calls the draw() in the sketch. Only when this is done the shapes and 3D entities drawn through the sketch such as box() and sphere() appears on the AR scene, but the already implemented renderers .i.e., plane, point cloud and background is unaware of this Integration there were a number of conflicts that were encountered: <br><br>
+<b>1.</b> Initially the background renderer remained void or was showing tint Proportional to the scene that the camera was pointing at.<br>
+<b>2.</b> The background renderer was frozen by the integration initially. The initial frame when the initialization is done is maintained throughout the activity lifecycle and the frame didn't update with the frame of the current camera image.<br>
+<b>3.</b> The object remained un-aligned with the virtual equivalents (world co-ordinates) initially.<br>
+<b>4.</b> On placing primitive shapes in the scene and on translation, only the wireframe moved and not the entire object.<br>
+<b>5.</b> The anchoring of the object with the plane was no so consistent.<br>
+<b>6.</b> The Matrix math which involves the modification of the MVP matrix to handle transformations were hard to figure out.<br><br>
+
+                    <h2>Visual outcomes:</h2><h4>
+Since the library is an AR Library it involves a lot of visual outcomes. Therefore, I used to summerise the work that I've done for a span or 2-3 weeks in the for of a short YouTube video.<br><br>
+                    <b>Outcome #1 :</b> <a href="https://youtu.be/vbjOnEHlrfE" target="_blank">https://youtu.be/vbjOnEHlrfE</a><br>
+<b>Outcome #2 :</b> <a href="https://youtu.be/YLghOMM2fow" target="_blank">https://youtu.be/YLghOMM2fow</a><br>
+<b>Outcome #3 :</b> <a href="https://youtu.be/1wE9fXVY7vs" target="_blank">https://youtu.be/1wE9fXVY7vs</a><br>
+<b>Outcome #4 :</b> <a href="https://youtu.be/lFkkvGgF6A8" target="_blank">https://youtu.be/lFkkvGgF6A8</a><br>
+<b>Outcome #5 :</b> <a href="https://youtu.be/sfpSNW_ElD4" target="_blank">https://youtu.be/sfpSNW_ElD4</a>
+
+                    <h2>Schedule & Github Links:</h2><h4>
+The schedule for the entire coding period was given along with my proposal and I pretty much stuck with the same till the end. In fact, I was a bit fast in the initial stage and was able to accomplishment more than I planned to do each week. As the library progressed through complex areas there was a bit slow down and alterations in my schedule to fit the work periods because of the complexity of the implementation but never-the-less those alterations didn't impact much.<br><br>
+
+                    <b>Commit history :</b> <a href="https://github.com/SyamSundarKirubakaran/processing-ar/commits/master" target="_blank">https://github.com/SyamSundarKirubakaran/processing-ar/commits/master</a><br>
+
+<b>GitHub repo :</b> <a href="https://github.com/SyamSundarKirubakaran/processing-ar" target="_blank">https://github.com/SyamSundarKirubakaran/processing-ar</a><br>
+                    
+                    <b>Pull Request:</b> <a href="https://github.com/processing/processing-android/pull/488" target="_blank">https://github.com/processing/processing-android/pull/488</a><br>
+
+<b>Commit Graph :</b> <a href="https://github.com/SyamSundarKirubakaran/processing-ar/graphs/contributors" target="_blank">https://github.com/SyamSundarKirubakaran/processing-ar/graphs/contributors</a><br>
+
+<b>Utils repo (ant build) :</b> <a href="https://github.com/SyamSundarKirubakaran/processing-ar-utils" target="_blank">https://github.com/SyamSundarKirubakaran/processing-ar-utils</a><br>
+
+<b>Utils repo (Gradle build) :</b><a href="https://github.com/SyamSundarKirubakaran/ar-utils-gradle" target="_blank"> https://github.com/SyamSundarKirubakaran/ar-utils-gradle</a><br>
+
+                    <h2>Current stage of Library:</h2><h4>
+The library is fully functional which allows the creation of AR apps using processing sketch this works perfectly fine when the object that has to be placed in the AR scene is are in the form of .obj file in the sketch's dir ( refer ImportObj under examples of AR Library ) or in the form of native Processing commands like box(), sphere() and so on, to be abstract for all PShapes. 
+Refer the releases in the library's repo for further information.
+
+                    <h2>Achieved so far:</h2><h4>
+                    <b>1.</b> <b>Sub renderers:</b><br>
+                    <b>-</b> PBackground.<br>
+    <b>-</b> PPlane.<br>
+    <b>-</b> PPointcloud.<br>
+    <b>-</b> Pobject.<br>
+                    <b>2.</b> Building the library using <b>Gradle</b> (ant previously).<br>
+                    <b>3.</b> AR Library <b>release v1.0</b>.<br>
+                    <b>4.</b> <b>Examples</b> for the library.<br>
+                    <b>5.</b> <b>Documentation</b> to build the library.<br>
+
+                    <h2>Things I've learnt:</h2><h4>
+                    <h3>Non Technical:</h3><h4>
+                    <b>1.</b> Working with a <b>huge code base.</b><br>
+                    <b>2.</b> How to <b>work with an organization.</b><br>
+                    <b>3.</b> Healthy and regular <b>interaction</b> with mentors.<br>
+                    <b>4.</b> How to <b>maintain guidelines</b> during coding sessions.<br>
+                    <b>5.</b> <b>Documentation.</b><br>
+                    <b>6.</b> <b>Managing</b> both academics and project work.<br>
+                    <b>7.</b> <b>Commitment to work</b> hours-to-gether.<br>
+
+                    <h3>Technical:</h3><h4>
+                    <b>1.</b> Deep understanding of <b>ARCore</b>.<br>
+                    <b>2.</b> Working with <b>OpenGLES</b>.<br>
+                    <b>3.</b> How to manage <b>migration of build system</b> of the project.<br>
+                    <b>4.</b> Maintain <b>multiple branches</b> during the implementation of new features.<br>
+                    <b>5.</b> Java, Gradle, <b>Rendering</b>, Processing, handling call backs,etc..<br><br>
+
+                    That's all for <b>GSoC'18</b>. Thanks for reading.!<br><br>
+                </h4>
+<!--
+                <div id="typography">
+	                <div class="row">
+	                    <div class="tim-typo">
+	                        <span class="tim-note">Feb 26, 2018</span>
+	                        <blockquote>
+	                         <p>
+	                         
+	                         </p>
+	                         <small>
+	                         Syam Sundar K
+	                         </small>
+	                        </blockquote>
+	                    </div>
+	                </div>
+	            </div>
+-->
+	    </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+	    <div class="container">
+	        <div class="copyright pull-right">
+	            &copy; 2018, made with <i class="material-icons">favorite</i> by Syam Sundar K.
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
