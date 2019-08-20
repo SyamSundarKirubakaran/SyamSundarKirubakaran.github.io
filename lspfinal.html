@@ -192,68 +192,77 @@
 									parsed tokens are classified. Successive weeks were for implementing the entities of
 									the feature list. <br><br>
 									<ul>
-										<li>Autocompletion deals a lot with scoping of fields - had to classify the fields based on
+										<li><b>Autocompletion</b> deals a lot with scoping of fields - had to classify the
+											fields based on
 											scopes and also had to import Processing Specific methods from the jar files
 											to show as Autocompletion item.</li>
-										<li>Diagnostics mostly dealt with compilation - since Processing is a Domain
+										<li><b>Diagnostics</b> mostly dealt with compilation - since Processing is a Domain
 											Specific Language built on top of Java. It's required to preprocess the
 											Processing Code into Java code before passing it into the compilation phase,
 											after compilation phase we'll get Error Nodes and the line number in which
 											it has occured which will then be shown visually in the Language Client.
 										</li>
-										<li>Hover for Insights dealt with extracting information for every Processing
+										<li><b>Hover for Insights</b> dealt with extracting information for every Processing
 											specific keyword from the Processing Documentation and displaying those info
 											if the mouse pointer is hovered over any keyword for more than 2 secounds.
 										</li>
-										<li>Goto Definition dealt will recording all the class, variable and method
+										<li><b>Goto Definition</b> dealt will recording all the class, variable and method
 											declarations with it's associated line number in a Tuple and redirecting to
 											appropriate position in the workspace on cmd+click on any field.</li>
-										<li>Finding References will point to all possible usages of the any variable /
+										<li><b>Finding References</b> will point to all possible usages of the any variable /
 											method / class name - this is done by encapsulating workspace field
 											positions with field names.</li>
-										<li>Renaming is an extension of Finding References where in renaming will modify
+										<li><b>Renaming / Refactoring</b> is an extension of Finding References where in renaming will modify
 											the encapsulated field name.</li>
 									</ul>
+									Overall, I really had fun learning and working with Compilers, Parser and Language
+									Servers. Of course, I ran into a number of road blocks and challenges along the way,
+									finding ways to solve them is what made coding period great.!
 									<br>
+									<p align="center">
+										<img src="lspimg/contributions.png" width="500" height="250"><br><br>
+										<i><b>(a) Contribution Graph</b></i>
+									</p>
 
 									<h2>Useful Links:</h2>
 									<h4>
-
+										<ul>
+											<li>Github Link: <a
+													href="https://github.com/processing-language-server/LS4P">https://github.com/processing-language-server/LS4P</a>
+											</li>
+											<li>Setup Documentation: <a
+													href="https://github.com/processing-language-server/LS4P/blob/master/assets/SETUP.md">https://github.com/processing-language-server/LS4P/blob/master/assets/SETUP.md</a>
+											</li>
+											<li>New Client Documentation: <a
+													href="https://github.com/processing-language-server/LS4P/blob/master/assets/NEWCLIENT.md">https://github.com/processing-language-server/LS4P/blob/master/assets/NEWCLIENT.md</a>
+											</li>
+										</ul><br>
+									</h4>
+									<h4>
+										<p align="center">
+											<img src="lspimg/prenote.png"><br><br>
+											<i><b>(b) LS4P Demo</b></i>
+										</p>
 									</h4>
 
 									<h4>
 										<h2>Things I've learnt:</h2>
 										<h4>
-											<h3>Non Technical:</h3>
-											<h4>
-												<b>1.</b> Working with a <b>huge code base.</b><br>
-												<b>2.</b> How to <b>work with an organization.</b><br>
-												<b>3.</b> Healthy and regular <b>interaction</b> with mentors.<br>
-												<b>4.</b> How to <b>maintain guidelines</b> during coding sessions.<br>
-												<b>5.</b> <b>Documentation.</b><br>
-												<b>6.</b> <b>Managing</b> both academics and project work.<br>
-												<b>7.</b> <b>Commitment to work</b> hours-to-gether.<br>
-											</h4>
-
-											<h3>Technical:</h3>
-											<h4>
-												<b>1.</b> Deep understanding of <b>ARCore</b>.<br>
-												<b>2.</b> Working with <b>OpenGLES</b>.<br>
-												<b>3.</b> How to manage <b>migration of build system</b> of the
-												project.<br>
-												<b>4.</b> Maintain <b>multiple branches</b> during the
-												implementation of new features.<br>
-												<b>5.</b> Java, Gradle, <b>Rendering</b>, Processing, handling call
-												backs,etc..<br><br>
-
-												That's all for <b>GSoC'19</b>. Thanks for reading.!<br><br>
-											</h4>
-
+											<ul>
+												<li>Server side scripting with Nodejs</li>
+												<li>Programming in TypeScript</li>
+												<li>Drafting Design Doc</li>
+												<li>Design decisions</li>
+												<li>Prioritizing Tasks</li>
+											</ul>
+											It's been a great summer for me and looking forward to contribute more to Processing in the future. That's all for <b>GSoC'19</b>.<br> Thanks for reading.!<br><br>
 										</h4>
+
 									</h4>
 								</h4>
 							</h4>
 						</h4>
+					</h4>
 					</h4>
 				</div>
 			</div>
