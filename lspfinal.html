@@ -132,20 +132,18 @@
 						<br><br>
 
 						I started contibuting to Processing Foundation as a part of Google Summer of Code 2018, worked
-						on creating an AR Renderer for Processing Android and this year I'm super excited to be a part
+						on creating an ARCore Renderer for Processing Android and this year I'm super excited to be a
+						part
 						of Processing Foundation again to work on Processing Language Server as a part of Google Summer
 						of Code 2019.<br><br>
-						This year was a lot different from the GSoC experience that I had last year. Last year I worked
-						on Android Mode of Processing and Android is something I'm so comfortable working with. But this
-						year I made up my mind to work on something outside android, something out of my comfort zone.
+						This year was a lot different from the GSoC experience that I had last year. Last year, I worked
+						on Android Mode for Processing and Android is something I'm so comfortable working with. But
+						this
+						year I made up my mind to work on something outside Android, something out of my comfort zone.
 						Out of all the ideas in the GSoC 2019 idea list, Processing Language Server really caught my
-						eyes. So I started digging deep into Language Server Concepts and Paradigms. Literally after 20
-						mins of exploring LSP, I felt, "that's something that I can dedicate my summer for".
-						<br><br>
-						Many thanks to Manindra for his outstanding mentorship. In addition to helping me clear out all
-						the road blocks I had, He taught me how to be a better software enginner over all. Things like
-						organizing workflows and pipelining tasks, drafting and following design docs, classifying and
-						prioritizing tasks are some of the crutial things that I learnt from him.
+						eyes. So I started digging deep into Language Server Concepts and Paradigms. Literally 20
+						mins after exploring LSP, I felt, "this something that I can dedicate my summer for".
+						<br>
 
 						<h2>Feature List:</h2>
 						<h4>
@@ -166,10 +164,10 @@
 							<h2>Community Bonding:</h2>
 							<h4>
 								Community bonding period was very helpful in getting me upto speed with coding. I had
-								very little or no previous experience working with nodejs, so had to spend a lot of time
-								learning the ins and outs of nodejs and parallely started exploring sample Language
+								very little / no previous experience working with nodejs, so had to spend a lot of time
+								learning the ins and outs of nodejs parallelly while exploring sample Language
 								Servers that use LSP.<br><br>
-								Spent good amount of time figuring out how stuffs work in node and reading a lot of code
+								Spent good amount of time figuring out how stuff works in node and reading a lot of code
 								before actually writing code. Also had to spend a good amount of time to get a strong
 								grasp of AST[Abstract Syntax Tree] because it's the form in which results of parsing are
 								obtained and most of the functional parts of the Language Server depends on Parsing and
@@ -177,46 +175,52 @@
 
 								<h2>Coding Period:</h2>
 								<h4>
-									Initially, I started by creating a simple Language Server using nodejs and a simple
-									Language Client that actively listens to the server. This was done by drafting a
-									couple of config files and assigning ports through which they communicate.<br><br>
+									Initially, I started by creating a simple Language Server using nodejs and a
+									Language Client that actively listens to the server. This was done by
+									writing down a couple of config files and assigning ports through which they can communicate.<br><br>
 									As Everyone knows, starting phase is always the hardest. Getting things in place, in
 									the initial stage of the project was the challenging part of the entire coding
 									period.
-									But in a bit more than a 3 of weeks I was able to pickup speed and was able to keep
+									But in a bit more than a 2 of weeks I was able to pickup speed and was able to keep
 									up with the timeline promised in the Proposal.<br><br>
 									I had to spend most of the time debugging in the initial stages of the coding period
-									and AST is always asymmentic so had to find most of the possible out comes of it to
-									get a even more clear picture of it. I would spend atleast an hour every day parsing
-									and debugging random java code to infer the patterns in AST and the way in which the
+									since AST in most cases is asymmentic so had to find most of the possible out comes of it to
+									get a even more clear picture of the same. I would spend atleast an hour every day parsing
+									and debugging preprocessed processing-java code to infer the patterns in AST and the way in which the
 									parsed tokens are classified. Successive weeks were for implementing the entities of
 									the feature list. <br><br>
 									<ul>
-										<li><b>Autocompletion</b> deals a lot with scoping of fields - had to classify the
+										<li><b>Autocompletion</b> deals a lot with scoping of fields - had to classify
+											the
 											fields based on
 											scopes and also had to import Processing Specific methods from the jar files
 											to show as Autocompletion item.</li>
-										<li><b>Diagnostics</b> mostly dealt with compilation - since Processing is a Domain
+										<li><b>Diagnostics</b> mostly dealt with compilation - since Processing is a
+											Domain
 											Specific Language built on top of Java. It's required to preprocess the
-											Processing Code into Java code before passing it into the compilation phase,
+											Processing Code into Java code before parsing it in the compilation phase,
 											after compilation phase we'll get Error Nodes and the line number in which
 											it has occured which will then be shown visually in the Language Client.
 										</li>
-										<li><b>Hover for Insights</b> dealt with extracting information for every Processing
+										<li><b>Hover for Insights</b> dealt with extracting information for every
+											Processing
 											specific keyword from the Processing Documentation and displaying those info
 											if the mouse pointer is hovered over any keyword for more than 2 secounds.
 										</li>
-										<li><b>Goto Definition</b> dealt will recording all the class, variable and method
+										<li><b>Goto Definition</b> dealt will recording all the class, variable and
+											method
 											declarations with it's associated line number in a Tuple and redirecting to
 											appropriate position in the workspace on cmd+click on any field.</li>
-										<li><b>Finding References</b> will point to all possible usages of the any variable /
+										<li><b>Finding References</b> will point to all possible usages of the any
+											variable /
 											method / class name - this is done by encapsulating workspace field
-											positions with field names.</li>
-										<li><b>Renaming / Refactoring</b> is an extension of Finding References where in renaming will modify
-											the encapsulated field name.</li>
+											positions with field names and displaying these encapsulated values on `Find References` invocation.</li>
+										<li><b>Renaming / Refactoring</b> is an extension of Finding References where in
+											renaming will modify
+											the encapsulated field name in the Container & Mapper.</li>
 									</ul>
 									Overall, I really had fun learning and working with Compilers, Parser and Language
-									Servers. Of course, I ran into a number of road blocks and challenges along the way,
+									Servers. Ofcourse, I ran into a number of road blocks and challenges along the way but
 									finding ways to solve them is what made coding period great.!
 									<br>
 									<p align="center">
@@ -255,7 +259,16 @@
 												<li>Design decisions</li>
 												<li>Prioritizing Tasks</li>
 											</ul>
-											It's been a great summer for me and looking forward to contribute more to Processing in the future. That's all for <b>GSoC'19</b>.<br> Thanks for reading.!<br><br>
+											Many thanks to Manindra for his outstanding mentorship. In addition to
+											helping me clear out all
+											the road blocks I had, He taught me how to be a better software enginner
+											over all. Things like
+											organizing workflows and pipelining tasks, drafting and following design
+											docs, classifying and
+											prioritizing tasks are some of the crutial things that I learnt from him.
+											It's been a great summer for me and looking forward to contribute more to
+											Processing in the future. That's all for <b>GSoC'19</b>. Thanks for
+											reading.!<br><br>
 										</h4>
 
 									</h4>
